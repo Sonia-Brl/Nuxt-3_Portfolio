@@ -7,6 +7,9 @@
       <li>
         <NuxtLink to="/blog" class="link">Blog</NuxtLink>
       </li>
+      <li>
+        <NuxtLink to="/contact" class="link">Contact</NuxtLink>
+      </li>
     </ul>
   </nav>
 </template>
