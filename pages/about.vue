@@ -2,14 +2,14 @@
   <div>
     This page is about me
 
-    <div>
+    <!--     <div>
       <button @click="enableCustomLayout">Update layout</button>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script setup>
-function enableCustomLayout() {
+/* function enableCustomLayout() {
   setPageLayout("another");
-}
+} */
 </script>
