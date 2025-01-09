@@ -1,9 +1,15 @@
 <template>
-  <div>This page is about me</div>
+  <div>
+    This page is about me
+
+    <div>
+      <button @click="enableCustomLayout">Update layout</button>
+    </div>
+  </div>
 </template>
 
-<script>
-definePageMeta({
-  layout: "another",
-});
+<script setup>
+function enableCustomLayout() {
+  setPageLayout("another");
+}
 </script>
