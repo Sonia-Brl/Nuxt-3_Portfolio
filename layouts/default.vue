@@ -7,3 +7,18 @@
     <TheFooter />
   </div>
 </template>
+
+<script setup>
+useHead({
+  // as a string,
+  // where `%s` is replaced with the title
+  titleTemplate: "%s - Sonia Brunel",
+
+  // or as a function
+  /*   titleTemplate: (productCategory) => {
+    return productCategory
+      ? `${productCategory} - Site Title`
+      : 'Site Title'
+  } */
+});
+</script>
