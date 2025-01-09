@@ -1,3 +1,3 @@
 <template>
-  <div>The footer</div>
+  <footer class="p-2">The footer</footer>
 </template>
