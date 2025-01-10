@@ -29,7 +29,7 @@ const {
   status,
   data: gitProjects,
 } = await useFetch("https://api.github.com/users/Sonia-Brl/repos");
-console.log("data :", gitProjects);
+//console.log("data :", gitProjects);
 // Retirer les repos qui n'on pas de description et dont la description n'est pas "Mon dépôt"
 const repos = computed(() =>
   gitProjects.value
