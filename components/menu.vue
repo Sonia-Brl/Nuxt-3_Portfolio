@@ -23,6 +23,6 @@ import ColorModeSelector from "./color-mode-selector.vue";
 
 <style scoped>
 .link {
-  @apply p-1 hover:bg-gray-200;
+  @apply p-1 hover:bg-gray-200 hover:dark:bg-slate-800;
 }
 </style>
