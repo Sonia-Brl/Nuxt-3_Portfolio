@@ -4,13 +4,18 @@
   </NuxtLayout>
 </template>
 
-<script setup lang="ts">
-/* useSeoMeta({
-  title: "Sonia Brunel's porfolio",
-  ogTitle: "Sonia Brunel's porfolio",
-  description: "This is my amazing site, let me tell you all about it.",
-  ogDescription: "This is my amazing site, let me tell you all about it.",
-  ogImage: "https://example.com/image.png",
-  twitterCard: "summary_large_image",
-}); */
-</script>
+<style>
+/**
+ https://nuxt.com/docs/getting-started/transitions
+ https://vuejs.org/guide/built-ins/transition.html#the-transition-component
+*/
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+</style>
