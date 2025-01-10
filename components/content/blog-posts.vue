@@ -1,12 +1,18 @@
 <template>
-  <section class="not-prose">
+  <section class="not-prose font-mono">
+    <div class="column text-gray-400 text-sm">
+      <div>date</div>
+      <div>title</div>
+    </div>
     <ul class="grid drif-cols-1 gap-4">
-      <li
-        v-for="post in posts"
-        :key="post._path"
-        class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100 dark:hover:bg-slate-800 font-mono"
-      >
-        <NuxtLink :to="post._path" class="py-2 link">{{ post.title }}</NuxtLink>
+      <li v-for="post in posts" :key="post._path">
+        <NuxtLink
+          :to="post._path"
+          class="column hover:bg-gray-100 dark:hover:bg-gray-800"
+        >
+          <div class="text-gray-500">2025</div>
+          <div>{{ post.title }}</div></NuxtLink
+        >
       </li>
     </ul>
   </section>
@@ -15,7 +21,13 @@
 const { data: posts } = await useAsyncData("blog-list", () =>
   queryContent("/blog")
     .where({ _path: { $ne: "/blog" } })
-    .only(["_path", "title"])
+    .only(["_path", "title", "publishedAt"])
     .find()
 );
 </script>
+
+<style scoped>
+.column {
+  @apply flex items-center space-x-8 py-2 border-b border-gray-200 dark:border-gray-700;
+}
+</style>
