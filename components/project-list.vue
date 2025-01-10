@@ -5,7 +5,7 @@
   <section v-else>
     <ul class="grid drif-cols-1 gap-4">
       <li
-        v-for="gitPorject in gitProjects"
+        v-for="gitPorject in repos"
         :key="gitPorject.id"
         class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100 font-mono"
       >
@@ -30,4 +30,10 @@ const {
   data: gitProjects,
 } = await useFetch("https://api.github.com/users/Sonia-Brl/repos");
 console.log("data :", gitProjects);
+// Retirer les repos qui n'on pas de description et dont la description n'est pas "Mon dépôt"
+const repos = computed(() =>
+  gitProjects.value
+    .filter((repo) => repo.description && repo.description != "Mon dépôt")
+    .sort((a, b) => b.stargazers_count - a.stargazers_count)
+);
 </script>
