@@ -7,7 +7,7 @@
       <li
         v-for="gitPorject in repos"
         :key="gitPorject.id"
-        class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100 font-mono"
+        class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100 dark:hover:bg-slate-800 font-mono"
       >
         <a :href="gitPorject.html_url" target="_blank">
           <div class="flex items-center justify-between text-sm">
