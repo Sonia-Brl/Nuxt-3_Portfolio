@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import ColorModeSelector from "./color-mode-selector.vue";
+</script>
+
 <template>
   <nav class="font-mono">
     <ul class="flex space-x-4">
@@ -15,13 +19,6 @@
       </li>
     </ul>
   </nav>
-  <div>
-    <h1>Color mode: {{ $colorMode.value }}</h1>
-    <select v-model="$colorMode.preference">
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select>
-  </div>
 </template>
 
 <style scoped>

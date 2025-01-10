@@ -9,11 +9,6 @@
 </template>
 
 <script setup>
-const colorMode = useColorMode();
-//console.log(colorMode.preference);
-colorMode.preference = "light";
-//console.log(colorMode.preference);
-
 useHead({
   // as a string,
   // where `%s` is replaced with the title
