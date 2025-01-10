@@ -11,7 +11,7 @@
           <aside class="sticky top-8">
             <div class="font-semibold mb-2">Table of Contents</div>
             <nav>
-              <TocLinks :links="doc.body.toc.links" />
+              <TocLinks :links="doc.body.toc.links" :active-id="activeId" />
             </nav>
           </aside>
         </div>
@@ -21,6 +21,30 @@
 </template>
 
 <script setup>
-const route = useRoute();
-//console.log(route.params.slug);
+// https://vuejs.org/api/composition-api-lifecycle.html#onmounted
+// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+const activeId = ref(null);
+onMounted(() => {
+  const callback = (entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        activeId.value = entry.target.id;
+        break;
+      }
+    }
+  };
+  const observer = new IntersectionObserver(callback, {
+    root: null,
+    threshold: 0.5,
+  });
+  const elements = document.querySelectorAll("h2, h3");
+  for (const element of elements) {
+    observer.observe(element);
+  }
+  onBeforeUnmount(() => {
+    for (const element of elements) {
+      observer.unobserve(element);
+    }
+  });
+});
 </script>
