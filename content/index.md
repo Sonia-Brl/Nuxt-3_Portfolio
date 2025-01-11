@@ -1,9 +1,9 @@
-# Hello
+# Salut
 
-## I'm Sonia
+## Je suis Sonia
 
-Read more [about me](/about), or see my latest [projects](/projects)
+En savoir plus sur [moi](/about), ou découvrir mes [projects](/projects)
 
-## Latest on my blog
+## Derniers articles publiés
 
 ::latest-blog-posts{:limit=3}

@@ -1,7 +1,7 @@
 ---
-descripion: "List all of my recent blog post"
+descripion: "Liste de différents articles"
 ---
 
-# Blog Post list
+# Liste d'article
 
 ::blog-posts

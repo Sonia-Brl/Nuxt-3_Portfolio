@@ -1,7 +1,9 @@
 <template>
   <div class="not-prose">
-    <section v-if="status === 'pending'">Loading...</section>
-    <section v-else-if="error">Something went wrong ... Try again!</section>
+    <section v-if="status === 'pending'">En chargement...</section>
+    <section v-else-if="error">
+      Une erreure s'es produite ... Essayer encore !
+    </section>
     <section v-else>
       <ul class="grid drif-cols-1 gap-4">
         <li

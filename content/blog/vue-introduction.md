@@ -1,5 +1,6 @@
 ---
-description: A beginner's guide to getting started with Vue 3.
+title: Synthèse des principales lois de L’UX
+description: Synthèse des principales lois de L’UX.
 image: /images/vue-logo.png
 head:
   meta:
@@ -9,37 +10,67 @@ publishedAt: 2022-07-12 17:15:00
 toc: true
 ---
 
-# Introduction to Vue 3
+# Synthèse des principales lois de L’UX
 
-![Vue 3 Introduction](/images/vue-logo.png)
+> Source : Recherches multiples sur le web
 
-## What is Vue 3?
+## Loi de Fitts (Fitts’s Law)
 
-Vue.js 3 is a progressive JavaScript framework for building user interfaces on the web.
-It's designed to be incrementally adoptable and can easily scale between a library and a full-featured framework.
+Le temps nécessaire pour atteindre une cible dépend de sa taille et de sa distance.
 
-## Why Choose Vue 3?
+- Agrandir les cibles interactives (boutons).
+- Proximité des éléments importants.
+- Groupement cohérent.
 
-Vue 3 comes with several exciting features that make it an excellent choice for developers:
+## Loi de Hick (Hick’s Law)
 
-- **Composition API:** This new API provides a set of additive, function-based APIs that allow flexible composition of component logic.
-- **Faster rendering:** Vue 3 features a faster virtual DOM and improved runtime performance.
-- **Improved TypeScript support:** Vue 3's codebase is written in TypeScript, allowing for better TypeScript integration.
+Plus il y a d’options, plus le temps de décision augmente.
 
----
+- Limiter le nombre d'options visibles.
+- Organiser les menus pour réduire la surcharge cognitive.
 
-## Getting Started with Vue 3
+## Loi de Pareto (80/20 Rule)
 
-Here's a basic Vue 3 application setup:
+80 % des résultats proviennent de 20 % des causes.
 
-```javascript
-const { createApp } = Vue;
-const app = createApp({
-  data() {
-    return {
-      message: "Hello Vue 3!",
-    };
-  },
-});
-app.mount("#app");
-```
+- Prioriser les fonctionnalités les plus utilisées.
+- Optimiser les tâches les plus fréquentes.
+
+## Loi de Miller (Miller’s Law)
+
+Un utilisateur peut retenir environ 7 éléments à la fois.
+
+- Grouper les informations en ensembles de 7 éléments.
+- Simplifi er la navigation en catégories logiques.
+
+## Heuristiques de Nielsen
+
+10 principes pour garantir l’usabilité.
+
+- Visibilité du système, correspondance avec le monde réel, contrôle utilisateur, consistance, etc.
+
+## Loi de Tesler (Tesler’s Law)
+
+La complexité d'un système est inévitable et doit être cachée.
+
+- Masquer la complexité derrière des interfaces simples.
+- Réduire l’effort de l’utilisateur.
+
+## Reconnaissance plutôt que rappel
+
+Les utilisateurs préfèrent reconnaître des options plutôt que de les mémoriser
+
+- Utiliser des éléments visuels pour aider à la reconnaissance.
+- Proposer des auto complétions.
+
+## Loi de Von Restorff
+
+Un élément distinctif est plus facilement remarqué.
+
+- Mettre en avant les éléments clés par des couleurs, tailles ou formes distinctes.
+
+## Loi de Gestalt
+
+Les utilisateurs perçoivent des éléments liés selon des principes (proximité, similarité, etc.).
+
+- Utiliser les principes de proximité, similitude, et continuité pour organiser l’interface.

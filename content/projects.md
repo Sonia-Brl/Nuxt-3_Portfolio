@@ -2,7 +2,7 @@
 description:" List of Sonia Brunel's project"
 ---
 
-# Projects
+# Projets Github
 
-Check-out some of my recent projects on github!
+Découvrez certains de mes projets récents sur github !
 ::project-list

@@ -4,7 +4,7 @@
     <main class="p-2 mt-10">
       <slot />
     </main>
-    <TheFooter />
+    <!--     <TheFooter /> -->
   </div>
 </template>
 

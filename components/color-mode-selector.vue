@@ -2,7 +2,7 @@
   <div>
     <div class="flex space-x-2 items-center">
       <div class="text-gray-500 text-xs" v-if="showNextModelLabel">
-        Change to {{ nextMode }}
+        Changer pour le thème {{ nextMode }}
       </div>
       <button
         @click="toggleMode"

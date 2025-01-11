@@ -3,7 +3,7 @@
     <section class="not-prose font-mono">
       <div class="column text-gray-400 text-sm">
         <div>date</div>
-        <div>title</div>
+        <div>titre</div>
       </div>
       <ul>
         <li v-for="post in posts" :key="post._path">

@@ -6,16 +6,13 @@ import ColorModeSelector from "./color-mode-selector.vue";
   <nav class="font-mono">
     <ul class="flex flex-col md:flex-row md:space-x-4">
       <li>
-        <NuxtLink to="/projects" class="link">Projects</NuxtLink>
+        <NuxtLink to="/projects" class="link">Projets</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about" class="link">About</NuxtLink>
+        <NuxtLink to="/about" class="link">A propos</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/blog" class="link">Blog</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/contact" class="link">Contact</NuxtLink>
       </li>
     </ul>
   </nav>

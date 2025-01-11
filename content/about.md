@@ -1,6 +1,6 @@
 ---
-title: "About page"
-description: "What a lovely page."
+title: "Page à propos"
+description: "Présentation de Sonia Brunel"
 image:
   src: "/assets/image.jpg"
   alt: "An image showcasing My Page."
@@ -20,9 +20,9 @@ head:
       content: "This is an OpenGraph title"
 ---
 
-# ✨ About me
+# ✨ A propos de moi
 
-Imagine a web technician who juggles pixels, codes with passion, and teaches with smile! <br>
-I am like a digital multi-tool, ready to sculpt your custom websites, solve code puzzles with perseverance, and share my knowledge to the next generation of creative geeks. 💻✨
+Imaginez un technicien web qui jongle avec les pixels, code avec passion et enseigne avec le sourire ! <br>
+Je suis comme un multi-outil numérique, prêt à sculpter vos sites Web personnalisés, à résoudre des énigmes de code avec persévérance et à partager mes connaissances avec la prochaine génération de geeks créatifs.💻✨
 
-[Go to the blog](/blog)
+[Voir les articles](/blog)
