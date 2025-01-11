@@ -6,9 +6,12 @@
     </main>
     <!--     <TheFooter /> -->
   </div>
+  <SpeedInsights />
 </template>
 
 <script setup>
+import { SpeedInsights } from "@vercel/speed-insights/vue";
+
 useHead({
   // as a string,
   // where `%s` is replaced with the title
