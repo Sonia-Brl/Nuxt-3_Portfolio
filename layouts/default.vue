@@ -7,11 +7,12 @@
     <!--     <TheFooter /> -->
   </div>
   <SpeedInsights />
+  <Analytics />
 </template>
 
 <script setup>
 import { SpeedInsights } from "@vercel/speed-insights/vue";
-
+import { Analytics } from "@vercel/analytics/nuxt";
 useHead({
   // as a string,
   // where `%s` is replaced with the title
