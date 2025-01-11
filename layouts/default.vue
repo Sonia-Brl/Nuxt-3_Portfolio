@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import { SpeedInsights } from "@vercel/speed-insights/vue";
+import { SpeedInsights } from "@vercel/speed-insights/nuxt";
 
 useHead({
   // as a string,
